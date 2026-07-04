@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Recommendations — Jab Doe</title>
+    <meta name="description" content="What colleagues, leaders, and mentors say about working with Jab Doe.">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Geist + Geist Mono + Source Serif 4 (Google Fonts), Geist Pixel (Vercel, via jsDelivr) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@300..600&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Geist', 'system-ui', 'sans-serif'],
+                        mono: ['Geist Mono', 'ui-monospace', 'monospace'],
+                        pixel: ['Geist Pixel', 'Geist Mono', 'monospace'],
+                    },
+                    colors: {
+                        ink: 'rgb(var(--ink) / <alpha-value>)',
+                        white: 'rgb(var(--bg) / <alpha-value>)',
+                        black: 'rgb(var(--ink) / <alpha-value>)',
+                        gray: {
+                            50: 'rgb(var(--g50) / <alpha-value>)', 100: 'rgb(var(--g100) / <alpha-value>)', 200: 'rgb(var(--g200) / <alpha-value>)', 300: 'rgb(var(--g300) / <alpha-value>)',
+                            400: 'rgb(var(--g400) / <alpha-value>)', 500: 'rgb(var(--g500) / <alpha-value>)', 600: 'rgb(var(--g600) / <alpha-value>)', 700: 'rgb(var(--g700) / <alpha-value>)',
+                            800: 'rgb(var(--g800) / <alpha-value>)', 900: 'rgb(var(--g900) / <alpha-value>)', 950: 'rgb(var(--g950) / <alpha-value>)',
+                        },
+                    },
+                    letterSpacing: { tightest: '-0.045em' },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @font-face {
+            font-family: 'Geist Pixel';
+            src: url('https://cdn.jsdelivr.net/gh/vercel/geist-pixel-font@main/fonts/webfonts/GeistPixel-Square.woff2') format('woff2');
+            font-display: swap;
+        }
+
+        :root {
+            --bg: 255 255 255;
+            --ink: 10 10 10;
+            --g50: 250 250 250;  --g100: 245 245 245; --g200: 233 233 233; --g300: 212 212 212;
+            --g400: 163 163 163; --g500: 115 115 115; --g600: 82 82 82;   --g700: 64 64 64;
+            --g800: 38 38 38;    --g900: 23 23 23;    --g950: 10 10 10;
+            --halftone: rgba(10, 10, 10, 0.9);
+            --sel-bg: #0a0a0a; --sel-fg: #ffffff;
+        }
+        html.dark {
+            --bg: 12 12 15;
+            --ink: 244 244 245;
+            --g50: 24 24 27;     --g100: 30 30 34;    --g200: 42 42 48;   --g300: 58 58 66;
+            --g400: 138 138 146; --g500: 160 160 168; --g600: 184 184 192; --g700: 206 206 212;
+            --g800: 228 228 232; --g900: 240 240 243; --g950: 250 250 250;
+            --halftone: rgba(244, 244, 245, 0.42);
+            --sel-bg: #fafafa; --sel-fg: #0a0a0a;
+            color-scheme: dark;
+        }
+
+        /* themed base so there's no flash before the Tailwind CDN compiles utilities */
+        html { background-color: rgb(var(--bg)); }
+        body { background-color: rgb(var(--bg)); color: rgb(var(--ink)); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+        ::selection { background: var(--sel-bg); color: var(--sel-fg); }
+
+        /* Coordinated color crossfade during a theme switch */
+        html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after {
+            transition: background-color .5s ease, border-color .5s ease, color .5s ease,
+                        fill .5s ease, stroke .5s ease, box-shadow .5s ease, outline-color .5s ease !important;
+        }
+        /* View Transitions circular wipe */
+        ::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+        @media (prefers-reduced-motion: reduce) {
+            html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after { transition: none !important; }
+        }
+
+        html.dark .halftone, html.dark .halftone-dense, html.dark .halftone-wide { background-image: radial-gradient(circle at center, var(--halftone) 1px, transparent 1.6px); }
+        html.dark .halftone-fine { background-image: radial-gradient(circle at center, var(--halftone) 0.8px, transparent 1.3px); }
+        html.dark .halftone-white { background-image: radial-gradient(circle at center, rgb(var(--bg)) 1px, transparent 1.5px); }
+        html.dark .dither-corner { filter: invert(1); }
+
+        .theme-switch { display: inline-flex; align-items: center; gap: 1px; padding: 2px; border: 1px solid rgb(var(--g200)); border-radius: 9999px; }
+        .theme-opt { display: inline-flex; align-items: center; justify-content: center; width: 1.35rem; height: 1.35rem; border-radius: 9999px; color: rgb(var(--g400)); transition: color .2s, background-color .2s; }
+        .theme-opt:hover { color: rgb(var(--ink)); }
+        .theme-opt.is-active { background: rgb(var(--g100)); color: rgb(var(--ink)); }
+        .theme-opt svg { width: 13px; height: 13px; }
+
+        /* ── Halftone dot texture ─────────────────────────────── */
+        .halftone {
+            background-image: radial-gradient(circle at center, rgba(10,10,10,0.9) 1px, transparent 1.6px);
+            background-size: 9px 9px;
+        }
+        .halftone-dense { background-size: 6px 6px; }
+        .halftone-wide  { background-size: 13px 13px; }
+
+        .mask-tr { -webkit-mask-image: radial-gradient(ellipse 80% 80% at 100% 0%, #000 0%, transparent 65%); mask-image: radial-gradient(ellipse 80% 80% at 100% 0%, #000 0%, transparent 65%); }
+        .mask-bl { -webkit-mask-image: radial-gradient(ellipse 80% 80% at 0% 100%, #000 0%, transparent 65%); mask-image: radial-gradient(ellipse 80% 80% at 0% 100%, #000 0%, transparent 65%); }
+        .mask-l  { -webkit-mask-image: radial-gradient(ellipse 70% 60% at 0% 50%, #000 0%, transparent 70%); mask-image: radial-gradient(ellipse 70% 60% at 0% 50%, #000 0%, transparent 70%); }
+        .mask-circle { -webkit-mask-image: radial-gradient(circle at center, #000 35%, transparent 70%); mask-image: radial-gradient(circle at center, #000 35%, transparent 70%); }
+        .mask-fade-x { -webkit-mask-image: linear-gradient(to right, transparent, #000 30%, #000 70%, transparent); mask-image: linear-gradient(to right, transparent, #000 30%, #000 70%, transparent); }
+        .mask-up { -webkit-mask-image: linear-gradient(to top, #000, transparent 80%); mask-image: linear-gradient(to top, #000, transparent 80%); }
+        .photo-dissolve { -webkit-mask-image: linear-gradient(to top, transparent 1%, #000 33%); mask-image: linear-gradient(to top, transparent 1%, #000 33%); }
+        .halftone-fine { background-image: radial-gradient(circle at center, rgba(10,10,10,0.9) 0.8px, transparent 1.3px); background-size: 5px 5px; }
+        .mask-down { -webkit-mask-image: linear-gradient(to bottom, #000, transparent); mask-image: linear-gradient(to bottom, #000, transparent); }
+        .halftone-white { background-image: radial-gradient(circle at center, #fff 1px, transparent 1.5px); background-size: 5px 5px; }
+        .photo-fade-bottom { -webkit-mask-image: linear-gradient(to top, transparent 0%, #000 45%); mask-image: linear-gradient(to top, transparent 0%, #000 45%); }
+
+        /* ── Entrance ─────────────────────────────────────────── */
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+        .reveal { opacity: 0; animation: fadeUp 0.7s cubic-bezier(0.16,1,0.3,1) forwards; }
+        .d1{animation-delay:.05s}.d2{animation-delay:.12s}.d3{animation-delay:.19s}
+        .d4{animation-delay:.26s}.d5{animation-delay:.33s}
+
+        @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+        .pulse-dot { animation: blink 1.8s ease-in-out infinite; }
+
+        a, button { transition: color .2s, background-color .2s, border-color .2s, opacity .2s, transform .2s; }
+        .rec-quote { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
+
+        /* ── Spotlight card deck ──────────────────────────────── */
+        .deck {
+            position: relative;
+            height: 19rem;
+            margin-inline: calc(50% - 50vw);
+            overflow-x: clip;
+            overflow-y: visible;
+        }
+        @supports not (overflow-x: clip) {
+            .deck { overflow-x: hidden; }
+        }
+        @media (min-width: 640px) {
+            .deck { height: 17rem; }
+        }
+        @media (min-width: 768px) {
+            .deck { margin-inline: 0; overflow: visible; }
+        }
+        .deck-card {
+            position: absolute; top: 0.75rem; left: 50%;
+            width: 18rem; margin-left: -9rem;
+            transform-origin: center bottom;
+            transition: transform .5s cubic-bezier(.22,1,.36,1), box-shadow .35s ease;
+            will-change: transform;
+            outline: none;
+        }
+        @media (min-width: 640px) { .deck-card { width: 20.5rem; margin-left: -10.25rem; } }
+        .deck-card.is-center { transform: translateY(0) rotate(0deg) scale(1); z-index: 30; box-shadow: 0 26px 55px -22px rgba(10,10,10,.30); }
+        .deck-card.is-left   { transform: translateX(-40%) translateY(14px) rotate(-16deg) scale(.88); z-index: 10; box-shadow: 0 16px 32px -18px rgba(10,10,10,.25); cursor: pointer; }
+        .deck-card.is-right  { transform: translateX(40%)  translateY(14px) rotate(16deg)  scale(.88); z-index: 20; box-shadow: 0 16px 32px -18px rgba(10,10,10,.25); cursor: pointer; }
+        .deck-card.is-left::after, .deck-card.is-right::after {
+            content: ''; position: absolute; inset: 0; border-radius: inherit;
+            background: rgba(255,255,255,.35); transition: background .35s ease; pointer-events: none;
+        }
+        .deck-card.is-left:hover::after, .deck-card.is-right:hover::after { background: rgba(255,255,255,0); }
+        .deck-card.is-center:hover { transform: translateY(-7px) scale(1.015); box-shadow: 0 34px 65px -22px rgba(10,10,10,.34); }
+        .deck-card.is-left:hover   { transform: translateX(-45%) translateY(2px) rotate(-12deg) scale(.92); z-index: 25; }
+        .deck-card.is-right:hover  { transform: translateX(45%)  translateY(2px) rotate(12deg)  scale(.92); z-index: 25; }
+        .deck-card:not(.is-center) a { pointer-events: none; }
+
+        #mobileNav { opacity: 0; transition: opacity .3s ease; }
+        #mobileNav.is-open { opacity: 1; }
+        #mobileNav .mnav-group { opacity: 0; transform: translateY(12px); transition: opacity .45s ease, transform .45s cubic-bezier(.16,1,.3,1); }
+        #mobileNav.is-open .mnav-group { opacity: 1; transform: none; }
+
+        .presence-avatar { width: 19px; height: 19px; border-radius: 50%; flex: none; background: #f1f1f1; box-shadow: 0 0 0 1.5px #fff, 0 0 0 2.5px #e5e5e5; }
+        .presence-icons > .presence-avatar + .presence-avatar { margin-left: -6px; }
+        .presence-more { display: inline-flex; align-items: center; justify-content: center; min-width: 19px; height: 19px; margin-left: -6px; padding: 0 5px; border-radius: 999px; background: #ececec; box-shadow: 0 0 0 1.5px #fff, 0 0 0 2.5px #e5e5e5; color: #525252; font-size: 9px; font-weight: 600; line-height: 1; }
+        .presence-label { font-family: 'Geist Pixel', 'Geist Mono', monospace; }
+        .presence-num { font-weight: 700; color: #0a0a0a; }
+
+        /* Placeholder store badges (no copyrighted assets) */
+        .badge {
+            display: inline-flex; align-items: center; gap: 7px;
+            height: 32px; padding: 0 11px; border-radius: 7px;
+            background: #0a0a0a; color: #fff;
+            font-family: 'Geist', system-ui, sans-serif; line-height: 1;
+        }
+        .badge svg { height: 18px; width: 18px; flex: none; }
+        .badge .badge-top { font-size: 7px; letter-spacing: .04em; opacity: .85; display: block; margin-bottom: 2px; }
+        .badge .badge-main { font-size: 13px; font-weight: 600; display: block; }
+
+        /* ── Community chat — left-aligned blurred overlay ─────── */
+        #chatOverlay { position: fixed; inset: 0; z-index: 110; display: none; align-items: center; justify-content: flex-start; padding: 1.5rem; }
+        #chatOverlay.is-visible { display: flex; }
+        .chat-backdrop { position: absolute; inset: 0; background: rgba(250,250,250,0.8); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); opacity: 0; transition: opacity .35s ease; }
+        #chatOverlay.is-open .chat-backdrop { opacity: 1; }
+        .chat-content { position: relative; z-index: 1; display: flex; flex-direction: column; width: 100%; max-width: 640px; padding-left: clamp(1.5rem, 9vw, 8rem); padding-right: 1rem; opacity: 0; transform: translateY(12px); transition: opacity .4s ease .05s, transform .5s cubic-bezier(.16,1,.3,1) .05s; }
+        #chatOverlay.is-open .chat-content { opacity: 1; transform: none; }
+        .chat-title { font-family: 'Geist Pixel', 'Geist Mono', monospace; font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.1; color: #0a0a0a; text-transform: lowercase; margin-bottom: 1.3rem; }
+
+        .chat-messages { display: flex; flex-direction: column; gap: 12px; height: min(340px, 50vh); overflow-y: auto; padding-right: 8px; scrollbar-width: none; }
+        .chat-messages > :first-child { margin-top: auto; }   /* bottom-anchor without breaking scroll */
+        .chat-messages::-webkit-scrollbar { display: none; }
+        .chat-messages.has-overflow { -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 32px); mask-image: linear-gradient(to bottom, transparent 0, #000 32px); }
+        .chat-empty { color: #9a9a9a; font-size: 14px; font-family: 'Geist Mono', ui-monospace, monospace; }
+        .chat-item { display: flex; align-items: flex-end; gap: 8px; max-width: 92%; transition: opacity .3s ease, transform .35s cubic-bezier(.16,1,.3,1); }
+        .chat-item.chat-enter { opacity: 0; transform: translateY(8px); }
+        .chat-avatar { width: 28px; height: 28px; margin-left: 5px; border-radius: 50%; flex: none; background: #f1f1f1; box-shadow: 0 0 0 1px rgba(0,0,0,.07); }
+        .chat-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+        .chat-author { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 5px; font-size: 11px; color: #737373; font-family: 'Geist Mono', ui-monospace, monospace; padding-left: 4px; }
+        .chat-author .chat-name-txt { color: #525252; }
+        .chat-author .chat-sep { color: #c4c4c4; }
+        .chat-author .chat-loc { color: #9a9a9a; }
+        .chat-author .chat-dev-wrap { display: inline-flex; color: #9a9a9a; }
+        .chat-author .chat-time { color: #b8b8b8; font-size: 9.5px; }
+        .chat-author .chat-dev { width: 12px; height: 12px; display: block; }
+        .chat-bubble { background: #e9e9e9; color: #0a0a0a; font-family: 'Geist Pixel', 'Geist Mono', monospace; font-size: 13px; line-height: 1.5; padding: 8px 12px; border-radius: 15px; border-bottom-left-radius: 5px; word-break: break-word; white-space: pre-wrap; }
+
+        .chat-input-row { display: flex; flex-direction: column; gap: 9px; margin-top: 1.7rem; max-width: 92%; }
+        .chat-prompt { font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12.5px; color: #737373; }
+        .chat-prompt b { color: #0a0a0a; font-weight: 600; }
+        .chat-entry { display: flex; align-items: center; gap: 12px; }
+        .chat-field { flex: 1; min-width: 0; background: transparent; border: none; padding: 4px 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 15px; color: #0a0a0a; }
+        .chat-field::placeholder { color: #b0b0b0; }
+        .chat-field:focus { outline: none; }
+        .chat-send { flex: none; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #737373; padding: 4px 2px; transition: color .2s, opacity .2s; }
+        .chat-send:hover { color: #0a0a0a; }
+        .chat-send:disabled { opacity: .35; }
+    </style>
+    <script>
+        (function () {
+            const KEY = 'theme';
+            const root = document.documentElement;
+            const mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+            const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            let animT;
+            function pref() { try { const v = localStorage.getItem(KEY); return (v === 'dark' || v === 'light' || v === 'system') ? v : 'light'; } catch (e) { return 'light'; } }
+            function isDark(p) { return p === 'dark' || (p === 'system' && !!mq && mq.matches); }
+            function setClass(p) {
+                root.classList.toggle('dark', isDark(p));
+                try {
+                    document.querySelectorAll('[data-theme-opt]').forEach(function (el) {
+                        el.classList.toggle('is-active', el.getAttribute('data-theme-opt') === p);
+                    });
+                } catch (e) {}
+            }
+            function crossfade(p) {                          // coordinated CSS color transition
+                root.classList.add('theme-anim');
+                setClass(p);
+                clearTimeout(animT);
+                animT = setTimeout(function () { root.classList.remove('theme-anim'); }, 520);
+            }
+            function reveal(p, x, y) {                        // circular wipe from (x,y) via View Transitions
+                const r = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+                const vt = root.__vt = document.startViewTransition(function () { setClass(p); });
+                vt.ready.then(function () {
+                    root.animate(
+                        { clipPath: ['circle(0px at ' + x + 'px ' + y + 'px)', 'circle(' + r + 'px at ' + x + 'px ' + y + 'px)'] },
+                        { duration: 540, easing: 'cubic-bezier(.32,.08,.24,1)', pseudoElement: '::view-transition-new(root)' }
+                    );
+                }).catch(function () {});
+            }
+            window.setTheme = function (p, ev) {
+                try { localStorage.setItem(KEY, p); } catch (e) {}
+                if (isDark(p) === root.classList.contains('dark')) { setClass(p); return; }   // no visual flip, just sync active state
+                if (reduce || !document.startViewTransition) { crossfade(p); return; }
+                const x = (ev && ev.clientX) || innerWidth, y = (ev && ev.clientY) || innerHeight;
+                reveal(p, x, y);
+            };
+            setClass(pref());                                // no-FOUC: instant on load, default light
+            if (mq) mq.addEventListener('change', function () { if (pref() === 'system') crossfade('system'); });
+            document.addEventListener('DOMContentLoaded', function () { setClass(pref()); });
+        })();
+    </script>
+</head>
+<body class="relative overflow-x-hidden bg-white font-sans text-ink antialiased">
+
+    <!-- ─────────────── Page-wide halftone backdrop ─────────────── -->
+    <div aria-hidden="true" class="pointer-events-none fixed inset-0 z-0">
+        <div class="halftone halftone-wide mask-tr absolute right-0 top-0 h-[70vh] w-[65vw] opacity-[0.16]"></div>
+        <div class="halftone mask-bl absolute bottom-0 left-0 h-[60vh] w-[55vw] opacity-[0.13]"></div>
+    </div>
+
+        <nav class="fixed inset-y-0 left-0 z-50 hidden w-56 flex-col border-r border-gray-200 bg-white px-7 py-8 lg:flex">
+        <a href="/" class="shrink-0 font-pixel text-[15px] leading-none hover:opacity-60">Jab Doe</a>
+
+        <div class="mt-9 flex flex-1 flex-col gap-4 overflow-y-auto font-mono text-[13px]">
+            <div class="flex flex-col gap-2.5">
+                <a href="/shop" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><path d="M6 8h12l-1 11a2 2 0 01-2 2H9a2 2 0 01-2-2L6 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 016 0V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Shop</a>
+                <a href="/blog" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Blog</a>
+                <a href="/gear" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><rect x="5" y="5" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M3 19h18M9.5 15h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Gear</a>
+                <a href="/resources" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><path d="M4 5.5A1.5 1.5 0 015.5 4H11v15.5H6a2 2 0 00-2 1.2V5.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M20 5.5A1.5 1.5 0 0018.5 4H13v15.5h5a2 2 0 012 1.2V5.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> Resources</a>
+            </div>
+            <div class="h-px bg-gray-200"></div>
+            <div class="flex flex-col gap-2.5">
+                <a href="/collabs" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16 6.2a3 3 0 010 5.6M17 19c0-2.2-.8-3.8-2.1-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Collabs</a>
+                <a href="/consulting" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 7V5.5A1.5 1.5 0 019.5 4h5A1.5 1.5 0 0116 5.5V7M3 12.5h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Consulting</a>
+            </div>
+            <div class="h-px bg-gray-200"></div>
+            <div class="flex flex-col gap-2.5">
+                <a href="/projects" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"> Projects</a>
+                <a href="/experience" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"> Experience</a>
+                <a href="/stack" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"> Stack</a>
+                <a href="/certifications" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"> Certifications</a>
+                <a href="/recommendations" class="relative inline-flex w-fit items-center gap-2.5 pl-5 text-ink"> Recommendations<svg class="absolute left-0 top-1/2 h-3 w-3 -translate-y-1/2" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <a href="/affiliations" class="relative inline-flex w-fit items-center gap-2.5 text-gray-500 hover:text-ink"> Affiliations</a>
+            </div>
+        </div>
+
+        <button type="button" onclick="openAsk()" class="mt-6 inline-flex w-fit items-center gap-2 text-[12px] text-gray-400 hover:text-ink">
+            <span>Ask anything</span>
+            <span class="inline-flex items-center gap-1">
+                <kbd class="ask-mod-key rounded border border-gray-300 bg-gray-50 px-1.5 py-0.5 font-mono text-[10px] leading-none text-gray-500">⌘</kbd>
+                <span class="font-mono text-[10px] text-gray-400">+</span>
+                <kbd class="rounded border border-gray-300 bg-gray-50 px-1.5 py-0.5 font-mono text-[10px] leading-none text-gray-500">K</kbd>
+            </span>
+        </button>
+
+        <button type="button" onclick="openTyping()" class="mt-2.5 inline-flex w-fit items-center gap-2 text-[12px] text-gray-400 hover:text-ink">
+            <span>Typing test</span>
+            <span class="inline-flex items-center gap-1">
+                <kbd class="ask-mod-key rounded border border-gray-300 bg-gray-50 px-1.5 py-0.5 font-mono text-[10px] leading-none text-gray-500">⌘</kbd>
+                <span class="font-mono text-[10px] text-gray-400">+</span>
+                <kbd class="rounded border border-gray-300 bg-gray-50 px-1.5 py-0.5 font-mono text-[10px] leading-none text-gray-500">J</kbd>
+            </span>
+        </button>
+
+        <div class="mt-4 border-y border-gray-200 py-3.5">
+            <span class="presence-icons inline-flex items-center"><img class="presence-avatar" alt="" src="https://api.dicebear.com/9.x/notionists/svg?seed=Maria&radius=50&backgroundColor=f1f1f1"></span>
+            <p class="presence-label mt-1 text-[10.5px] text-gray-400"><b class="presence-num">1</b> person viewing now</p>
+            <button type="button" onclick="openChat()" class="mt-3.5 inline-flex w-fit items-center gap-2 font-mono text-[12px] text-gray-500 hover:text-ink">
+                <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none"><path d="M4 5.5h16v10H10l-4.5 4v-4H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9" cy="10.5" r=".9" fill="currentColor"/><circle cx="12" cy="10.5" r=".9" fill="currentColor"/><circle cx="15" cy="10.5" r=".9" fill="currentColor"/></svg>
+                community chat
+            </button>
+        </div>
+
+        <div class="mt-6 shrink-0">
+            <div class="mb-4"><div class="theme-switch" role="group" aria-label="Theme">
+                <button type="button" data-theme-opt="system" onclick="setTheme('system', event)" class="theme-opt" title="System" aria-label="System theme">
+                    <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M9 21h6M12 17v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                </button>
+                <button type="button" data-theme-opt="light" onclick="setTheme('light', event)" class="theme-opt" title="Light" aria-label="Light theme">
+                    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                </button>
+                <button type="button" data-theme-opt="dark" onclick="setTheme('dark', event)" class="theme-opt" title="Dark" aria-label="Dark theme">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M20 13.6A8 8 0 1 1 10.4 4a6.2 6.2 0 0 0 9.6 9.6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </div>
+            <p class="text-[12px] leading-relaxed text-gray-400">For work, collabs &amp; everything else, reach me at</p>
+            <a href="mailto:hello@example.com" class="mt-1.5 inline-flex w-fit items-center gap-2 font-mono text-[13px] text-ink hover:text-gray-500"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> hello@example.com</a>
+        </div>
+    </nav><!-- ─────────────── Mobile top bar (below lg) ─────────────── -->
+    <header class="sticky top-0 z-50 border-b border-gray-200/70 bg-white/90 backdrop-blur-md lg:hidden">
+        <div class="mx-auto flex max-w-3xl items-center justify-between px-6 py-3">
+            <a href="/" class="font-pixel text-[14px]">Jab Doe</a>
+            <button type="button" onclick="openMobileNav()" aria-label="Open menu" class="-mr-1 p-1 text-gray-700 hover:text-ink">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </button>
+        </div>
+    </header>
+
+        <div id="mobileNav" class="fixed inset-0 z-[60] hidden flex-col bg-white lg:hidden">
+        <div class="flex items-center justify-between border-b border-gray-200 px-6 py-3">
+            <a href="/" class="font-pixel text-[14px]">Jab Doe</a>
+            <button type="button" onclick="closeMobileNav()" aria-label="Close menu" class="-mr-1 p-1 text-gray-700 hover:text-ink">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </button>
+        </div>
+
+        <div class="flex flex-1 flex-col overflow-y-auto px-7 py-8 font-mono text-[16px]">
+            <div class="mnav-group flex flex-col gap-4" style="transition-delay: 0.05s">
+                <a href="/shop" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><path d="M6 8h12l-1 11a2 2 0 01-2 2H9a2 2 0 01-2-2L6 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 016 0V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Shop</a>
+                <a href="/blog" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Blog</a>
+                <a href="/gear" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><rect x="5" y="5" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M3 19h18M9.5 15h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Gear</a>
+                <a href="/resources" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><path d="M4 5.5A1.5 1.5 0 015.5 4H11v15.5H6a2 2 0 00-2 1.2V5.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M20 5.5A1.5 1.5 0 0018.5 4H13v15.5h5a2 2 0 012 1.2V5.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> Resources</a>
+            </div>
+            <div class="my-5 h-px bg-gray-200"></div>
+            <div class="mnav-group flex flex-col gap-4" style="transition-delay: 0.11s">
+                <a href="/collabs" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16 6.2a3 3 0 010 5.6M17 19c0-2.2-.8-3.8-2.1-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Collabs</a>
+                <a href="/consulting" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 7V5.5A1.5 1.5 0 019.5 4h5A1.5 1.5 0 0116 5.5V7M3 12.5h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Consulting</a>
+            </div>
+            <div class="my-5 h-px bg-gray-200"></div>
+            <div class="mnav-group flex flex-col gap-4" style="transition-delay: 0.17s">
+                <a href="/projects" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"> Projects</a>
+                <a href="/experience" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"> Experience</a>
+                <a href="/stack" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"> Stack</a>
+                <a href="/certifications" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"> Certifications</a>
+                <a href="/recommendations" class="relative inline-flex w-fit items-center gap-3 pl-6 text-ink"> Recommendations<svg class="absolute left-0 top-1/2 h-3.5 w-3.5 -translate-y-1/2" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <a href="/affiliations" class="relative inline-flex w-fit items-center gap-3 text-gray-700 hover:text-ink"> Affiliations</a>
+            </div>
+            <div class="my-5 h-px bg-gray-200"></div>
+            <div class="mnav-group flex flex-col gap-5" style="transition-delay: 0.23s">
+                <button type="button" onclick="closeMobileNav(); setTimeout(openAsk, 330);" class="inline-flex w-fit items-center gap-2 text-[14px] text-gray-500 hover:text-ink">
+                    <span>ask anything</span>
+                    <span class="inline-flex items-center gap-1">
+                        <kbd class="ask-mod-key rounded border border-gray-300 bg-gray-50 px-1.5 py-0.5 text-[10px] leading-none text-gray-500">⌘</kbd>
+                        <span class="text-[10px] text-gray-400">+</span>
+                        <kbd class="rounded border border-gray-300 bg-gray-50 px-1.5 py-0.5 text-[10px] leading-none text-gray-500">K</kbd>
+                    </span>
+                </button>
+                <div class="-mt-1 border-y border-gray-200 py-4">
+                    <span class="presence-icons inline-flex items-center"><img class="presence-avatar" alt="" src="https://api.dicebear.com/9.x/notionists/svg?seed=Maria&radius=50&backgroundColor=f1f1f1"></span>
+                    <p class="presence-label mt-1 text-[11.5px] text-gray-400"><b class="presence-num">1</b> person viewing now</p>
+                    <button type="button" onclick="closeMobileNav(); setTimeout(openChat, 330);" class="mt-3.5 inline-flex w-fit items-center gap-2 text-[14px] text-gray-600 hover:text-ink">
+                        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none"><path d="M4 5.5h16v10H10l-4.5 4v-4H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9" cy="10.5" r=".9" fill="currentColor"/><circle cx="12" cy="10.5" r=".9" fill="currentColor"/><circle cx="15" cy="10.5" r=".9" fill="currentColor"/></svg>
+                        community chat
+                    </button>
+                </div>
+                <div>
+                    <div class="mb-4"><div class="theme-switch" role="group" aria-label="Theme">
+                        <button type="button" data-theme-opt="system" onclick="setTheme('system', event)" class="theme-opt" title="System" aria-label="System theme">
+                            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M9 21h6M12 17v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                        </button>
+                        <button type="button" data-theme-opt="light" onclick="setTheme('light', event)" class="theme-opt" title="Light" aria-label="Light theme">
+                            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                        </button>
+                        <button type="button" data-theme-opt="dark" onclick="setTheme('dark', event)" class="theme-opt" title="Dark" aria-label="Dark theme">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M20 13.6A8 8 0 1 1 10.4 4a6.2 6.2 0 0 0 9.6 9.6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+                        </button>
+                    </div>
+                </div>
+                    <p class="text-[12px] leading-relaxed text-gray-400">For work, collabs &amp; everything else, reach me at</p>
+                    <a href="mailto:hello@example.com" class="mt-1.5 inline-flex w-fit items-center gap-2 text-[14px] text-ink hover:text-gray-500"><svg viewBox="0 0 24 24" fill="none" class="h-[1.15em] w-[1.15em] shrink-0"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> hello@example.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ─────────────── Main content ─────────────── -->
+    <main id="top" class="relative z-10 lg:pl-56">
+        <div class="relative z-10 mx-auto max-w-4xl px-6 py-14 sm:py-20">
+
+        <!-- header -->
+        <header class="mb-12">
+            <h1 class="font-pixel text-2xl leading-none">recommendations</h1>
+        </header>
+
+        <p class="reveal mb-12 max-w-xl text-[15px] leading-relaxed text-gray-600">
+            What leaders, teammates, and mentors say about working with me — straight from LinkedIn.
+        </p>
+
+        <!-- testimonial wall -->
+        <div class="columns-1 gap-4 sm:columns-2 lg:columns-3">
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">Jab Doe, I believe, would be the next Philippine unicorn. He is technically skilled.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">HA</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Henry Aguda</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Secretary, Department of Information and Communications Technology (DICT)</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">Jab Doe has been instrumental in PocketDevs&#039; growth since day one. As our Software Engineering Lead, he&#039;s not just a strong developer—he&#039;s a true builder. From leading key projects to mentoring the team, Jab Doe consistently delivers high-quality solutions and forward-thinking ideas. His leadership, technical depth, and ability to turn vision into reality make him an invaluable asset to any team.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">ER</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Eric Jeremie Rotaquio</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Chief Executive Officer at PocketDevs</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Aug 2025</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">I had the pleasure of working with Jab Doe at Cambridge University Press and Assessment where he was one of our AI Engineers in our Gen AI Centre of Excellence. Jab Doe was always positive, approachable and had the ability to come up with strong solutions and approaches.
+
+Technically, Jab Doe was very strong, able to deliver good quality deliverables. Whether that was coding solutions are identifying low/no code options, he had the technical skills to know what was best.
+
+One of his key strengths was his people skills, able to easily work and communicate with our stakeholders, (many that were quite senior) present solutions or demo our POCs with confidence and a smile! I recommend Jab Doe for any engineering roles, especially in the AI and automation space. All the best Jab Doe!</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">TM</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Todd Milne</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Digital Product Specialist</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Aug 2025</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">I&#039;ve only had the chance to work with Jab Doe briefly, but even in that short time, it was clear how much passion and depth of knowledge he brings to his work.
+
+From day one, he stood out as someone who cares about what he&#039;s building and is always looking for ways to improve not just the product, but the process and the team around him. He approaches problems with a thoughtful, technical mindset and consistently contributes ideas that move things forward. Any team would benefit from having someone like Jab Doe—not only for the technical strength he brings, but for the energy and perspective that make him such a valuable teammate.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">RY</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Ryan Yao</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">AI Dev @ Cambridge University Press and Assessment</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Aug 2025</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">It was a real pleasure to work with Jab Doe. He&#039;s not only a fantastic professional who consistently delivers high-quality work, but he&#039;s also an amazing person to have on the team. He was always willing to lend a hand, and his proactive approach to learning new technologies was truly impressive. Beyond his skills, his positive attitude and willingness to build strong team relationships made him an invaluable colleague and a great friend. I&#039;m confident he&#039;ll make a success of wherever his career takes him, and I truly hope our paths cross again.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">JS</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Joshua Shailes</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Senior AI Data Scientist</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Jul 2025</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">Jab Doe is one of the most reliable developers that I have worked with to date. His quick executions and concept building skills helped our team to deliver most of our projects. He has always provided insightful feedback both on the strategic and technical aspects of our work within the team. He is also well-aware of the field that we work in and has been constantly sharing new finds within this space. Along with all of this knowledge that he holds, he is also a very approachable person and communicates well with everyone who wants to learn from him.
+
+In and out of work, it&#039;s never boring to have him around. His quick wit has made our heavy responsibilities much lighter, improving the morale of the team. I had many great conversations with him, and I always look forward to more. I highly recommend Jab Doe to anyone who is looking for a reliable and knowledgeable developer who can also bring a positive vibe to the team. I&#039;m glad to have him around and I hope to work with him again in the future.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">JC</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Jecho Carlos</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Building AI software that actually makes sense | jechocarlos.dev</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Jul 2025</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">I&#039;ve had the privilege of working with Jab Doe on several projects across two different teams and he&#039;s genuinely one of those teammates who raises the bar for everyone around him.
+
+Whether we were building web platforms or working on AI applications, Jab Doe consistently brought strong domain knowledge in AI, software engineering and DevOps. He&#039;s the kind of engineer who not only delivers results quickly but also ensures high-quality output every time. But what makes him stand out even more is how easy he is to work with - collaborative, thoughtful, and always willing to lend a hand no matter how busy he is.
+
+As a senior in the team, Jab Doe leads not just with technical skill but with genuine care and support. He&#039;s the kind of teammate who makes you feel comfortable asking questions, brainstorming ideas, or simply reaching out when you&#039;re stuck. His calm confidence and dedication to excellence are genuinely inspiring, and working with him has made me better at what I do. I&#039;ve learned so much just by being around him.
+
+Any team would be lucky to have someone like Jab Doe, not just because of what he can build but because of the kind of teammate and leader he naturally is.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">JA</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Jelo Andes</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Generative AI at Cambridge University Press and Assessment</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Jul 2025</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">I&#039;ve known Jab Doe since we started college. We&#039;re also groupmates in some projects for our major subjects and I can testify his good leadership in creating software solutions and not only that but also in student organization because way back then he was our president. And also his eagerness to achieve things through his visions. Without his sacrifices and determination, our start-up company named Pocketdevs won&#039;t grow rapidly. I would highly recommend Jab Doe&#039;s skill set, ideas, good attitude, and one of my best colleagues.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">JM</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Justin Manigo</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">DevOps | Full Stack Developer | AWS Certified Cloud Practitioner</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Feb 2022</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">Jab Doe and I worked together in various projects where I saw his tenacity to deliver what he promised to do. He is able to meet deadlines without sacrificing the quality of the output, and at times even exceeding the set goals. His dedication to pursue his craft and his mindset as a lifelong learner allow him to be easily mentored, as he is eager to learn new technologies. His enthusiasm at new opportunities makes him a great asset because he does everything with renewed energy and finds ways to optimize existing processes. Jab Doe sure is a great addition to any team!</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">VH</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Van Honoridez</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">SAP MM/IM/LE-WM Package Consultant</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Dec 2021</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">Takes lead in a software development. Can handle team well.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">GS</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Gran Sabandal</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Assistant Instructor at University of San Carlos</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Mar 2020</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">Intelligent Software Engineer.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">KG</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Ken Gorro</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Senior Software Engineer | AI/ML Engineer | Lecturer</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Mar 2020</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">Jab Doe is a good student and software developer who shows professionalism and dedication in whatever he does. His software projects during his academic years are up to standard and is being used by the university for some of its operations. Jab Doe also demonstrated social awareness and leadership skills through his involvement as an officer/member in various student and special interest groups in the university.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">GP</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Glenn Pepito</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">AI Automation &amp; Workflow Specialist | Software Engineer | Researcher | Educator</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Mar 2020</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">Jab Doe was the most talented software engineer I&#039;ve mentored in a long time. He&#039;s a fast learner, and he always makes sure to deliver quality output given a period of time. He is also very keen on learning new technologies, and I find him to be objectively passionate about tech. He&#039;s definitely someone you want on your team.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">CM</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Cris Lawrence Adrian Militante</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Integrations Product Lead | Computer Science Instructor</div>
+                                                            <div class="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-gray-400">Mar 2020</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">Was an intern at PocketDevs and sir Jab Doe was our main trainer to the different technologies we use in the company such as Laravel, Bootstrap, etc. With his guidance, I was equipped with some of the current trends and insights in the tech industry which enabled me to be part of my current company.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">PV</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Patrick Vince Velasco</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Software Engineer, YNS</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">Sir Jab Doe&#039;s teaching approach is incredibly hands-on, and the projects significantly accelerated my learning process in web development. I am truly grateful for the mentorship I received from him during my web development internship.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">JP</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">John Edmerson Pizarra</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Jr. Full-stack Developer, PocketDevs</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                                            <figure class="rec-card reveal mb-4 break-inside-avoid rounded-xl border border-gray-200 bg-white p-5 shadow-[0_8px_22px_-18px_rgba(10,10,10,0.22)]">
+                    <svg class="h-6 w-6 text-gray-200" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H6a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4v2h1a4 4 0 004-4V7zm11 0h-3a3 3 0 00-3 3v1a3 3 0 003 3h1v1a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V7z"/></svg>
+
+                    <blockquote class="mt-2 whitespace-pre-line font-serif text-[15px] leading-[1.65] text-gray-700">The exposure to real projects and guidance from Sir Jab Doe was instrumental in my growth as a web developer. His approach to teaching and mentoring helped me to understand the intricacies of web development, and I&#039;m now working at Quickway Holdings Inc., applying the skills I learned.</blockquote>
+
+                    <figcaption class="mt-5 flex items-start gap-3 border-t border-gray-100 pt-4">
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 font-mono text-[11px] font-medium text-gray-600">ZT</div>
+                        <div class="min-w-0">
+                            <div class="text-[13px] font-semibold leading-snug text-ink">Zinia Ma. Consuelo R. Trinidad</div>
+                            <div class="mt-0.5 text-[11px] leading-snug text-gray-500">Web Developer, Quickway Holdings Inc.</div>
+                                                    </div>
+                    </figcaption>
+                </figure>
+                    </div>
+
+    </div>
+    </main>
+
+    <!-- ── Interactive Overlays ── -->
+    <!-- ── Ask Overlay Styles ── -->
+    <style>
+        #askOverlay { position: fixed; inset: 0; z-index: 100; display: none; align-items: center; justify-content: flex-start; padding: 1.5rem; }
+        #askOverlay.is-visible { display: flex; }
+        .ask-backdrop { position: absolute; inset: 0; background: rgb(var(--g50) / 0.82); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); opacity: 0; transition: opacity .4s ease; }
+        #askOverlay.is-open .ask-backdrop { opacity: 1; }
+        .ask-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; text-align: left; gap: 1.5rem; width: 100%; max-width: 760px; padding-left: clamp(1.5rem, 9vw, 8rem); opacity: 0; transform: translateY(12px); transition: opacity .45s ease .1s, transform .55s cubic-bezier(.16,1,.3,1) .1s; }
+        #askOverlay.is-open .ask-content { opacity: 1; transform: none; }
+        .ask-title { font-family: 'Geist Pixel', 'Geist Mono', monospace; font-size: clamp(1.9rem, 5.5vw, 3.4rem); line-height: 1.05; color: rgb(var(--ink)); letter-spacing: -0.01em; text-transform: lowercase; white-space: nowrap; transition: opacity .25s ease, transform .3s cubic-bezier(.16,1,.3,1); }
+        @keyframes askSweep { from { -webkit-mask-position: 100% 0; mask-position: 100% 0; } to { -webkit-mask-position: 0% 0; mask-position: 0% 0; } }
+        .ask-head.is-shimmer { -webkit-mask-image: linear-gradient(90deg, #000 0 38%, rgba(0,0,0,0.22) 50%, #000 62% 100%); mask-image: linear-gradient(90deg, #000 0 38%, rgba(0,0,0,0.22) 50%, #000 62% 100%); -webkit-mask-size: 300% 100%; mask-size: 300% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; animation: askSweep 1.8s linear infinite; }
+        .ask-title.is-small { font-size: clamp(1.25rem, 3.4vw, 1.95rem); line-height: 1.3; white-space: normal; }
+        @media (max-width: 640px) { .ask-title { white-space: normal; } }
+        .ask-head.is-shimmer .ask-title { color: rgb(var(--g500)); }
+        .ask-head { display: flex; align-items: center; gap: 0.5em; max-width: 100%; font-size: clamp(1.25rem, 3.4vw, 1.95rem); }
+        .loader { width: 0.85em; aspect-ratio: 1; --_g: no-repeat radial-gradient(farthest-side, rgb(var(--g500)) 94%, #0000); background: var(--_g) 0 0, var(--_g) 100% 0, var(--_g) 100% 100%, var(--_g) 0 100%; background-size: 40% 40%; animation: l38 1s infinite; }
+        @keyframes l38 { 100% { background-position: 100% 0, 100% 100%, 0 100%, 0 0; } }
+        #askLoader { display: none; flex: 0 0 auto; transform: translateY(0.08em); }
+        #askLoader.is-on { display: block; }
+        .ask-bubble { display: none; position: relative; margin-left: 11px; max-width: min(85vw, 600px); background: rgb(var(--g200)); color: rgb(var(--ink)); font-family: 'Geist Mono', ui-monospace, 'SF Mono', monospace; font-size: clamp(0.95rem, 2.6vw, 1.2rem); line-height: 1.45; padding: 10px 15px; border-radius: 14px; border-top-left-radius: 5px; word-break: break-word; }
+        .ask-bubble.is-on { display: block; transform-origin: 0 50%; animation: bubbleIn .24s cubic-bezier(.16,1,.3,1); }
+        .ask-bubble::before { content: ''; position: absolute; left: -7px; top: 13px; width: 0; height: 0; border-style: solid; border-width: 6px 8px 6px 0; border-color: transparent rgb(var(--g200)) transparent transparent; }
+        @keyframes bubbleIn { from { opacity: 0; transform: translateY(3px) scale(.94); } to { opacity: 1; transform: none; } }
+
+        /* Plot-twist data reveal */
+        .ask-reveal { display: none; flex-direction: column; align-items: flex-start; max-width: min(92vw, 660px); }
+        .reveal-item { opacity: 0; filter: blur(10px); transition: opacity .6s ease, filter .6s ease; }
+        .reveal-item.show { opacity: 1; filter: blur(0); }
+        .reveal-title { font-family: 'Geist Pixel', 'Geist Mono', monospace; font-size: clamp(1.5rem, 4.5vw, 2.3rem); line-height: 1.15; color: rgb(var(--ink)); }
+        .reveal-sub { margin-top: .9rem; max-width: 36rem; font-family: 'Geist Pixel', 'Geist Mono', monospace; font-size: clamp(1rem, 2.7vw, 1.25rem); line-height: 1.5; color: rgb(var(--g600)); }
+        .reveal-line { margin-top: .65rem; font-family: 'Geist Pixel', 'Geist Mono', monospace; font-size: clamp(.95rem, 2.5vw, 1.15rem); line-height: 1.55; color: rgb(var(--ink)); }
+        .reveal-line.gap { margin-top: 1.35rem; }
+        .reveal-edu { margin-top: 1.5rem; max-width: 36rem; font-family: 'Geist Pixel', 'Geist Mono', monospace; font-size: clamp(.95rem, 2.5vw, 1.15rem); line-height: 1.6; color: rgb(var(--g600)); }
+        .ask-field { display: inline-flex; align-items: center; min-height: 2.4rem; max-width: 90vw; font-family: 'Geist Mono', ui-monospace, 'SF Mono', monospace; font-size: clamp(1.05rem, 3vw, 1.5rem); color: rgb(var(--g500)); cursor: text; }
+        #askText { white-space: pre-wrap; word-break: break-word; }
+        .ask-caret { display: inline-block; width: 2px; height: 1.2em; background: rgb(var(--g500)); margin-left: 3px; vertical-align: middle; animation: caretBlink 1.06s step-end infinite; }
+        @keyframes caretBlink { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }
+        .ask-hidden-input { position: absolute; opacity: 0; width: 1px; height: 1px; border: 0; padding: 0; }
+    </style>
+
+    <!-- ── Ask Overlay Markup ── -->
+    <div id="askOverlay" role="dialog" aria-modal="true" aria-label="Ask">
+        <div class="ask-backdrop" onclick="closeAsk()"></div>
+        <div class="ask-content" onclick="focusAsk()">
+            <div class="ask-bubble" id="askBubble"><span id="askBubbleText"></span></div>
+            <div class="ask-head">
+                <div class="loader" id="askLoader"></div>
+                <h2 class="ask-title">what do you want to ask?</h2>
+            </div>
+            <div class="ask-reveal" id="askReveal"></div>
+            <div class="ask-field"><span id="askText"></span><span class="ask-caret"></span></div>
+            <input id="askInput" class="ask-hidden-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Type your question">
+        </div>
+    </div>
+
+    <!-- ── Typing Test Styles ── -->
+    <style>
+        #typingOverlay { position: fixed; inset: 0; z-index: 115; display: none; align-items: center; justify-content: center; padding: 2rem; }
+        #typingOverlay.is-visible { display: flex; }
+        .tt-backdrop { position: absolute; inset: 0; background: rgb(var(--g50) / 0.82); -webkit-backdrop-filter: blur(13px); backdrop-filter: blur(13px); opacity: 0; transition: opacity .35s ease; }
+        html.dark .tt-backdrop { background: rgb(var(--bg) / 0.92); }
+        #typingOverlay.is-open .tt-backdrop { opacity: 1; }
+        .tt-content { position: relative; z-index: 1; width: 100%; max-width: 880px; display: flex; flex-direction: column; align-items: center; gap: 1.7rem; opacity: 0; transform: translateY(16px) scale(.99); transition: opacity .45s ease .05s, transform .55s cubic-bezier(.16,1,.3,1) .05s; }
+        #typingOverlay.is-open .tt-content { opacity: 1; transform: none; }
+        #typingOverlay.is-open.is-closing .tt-content { opacity: 0; transform: translateY(10px) scale(.99); transition: opacity .26s ease, transform .3s cubic-bezier(.4,0,1,1); }
+
+        .tt-stats { display: flex; align-items: flex-start; gap: 2.6rem; font-family: 'Geist Mono', ui-monospace, monospace; }
+        .tt-stat { display: flex; flex-direction: column; align-items: center; gap: .3rem; }
+        .tt-stat-val { font-size: 1.8rem; font-weight: 500; color: rgb(var(--ink)); line-height: 1; font-variant-numeric: tabular-nums; }
+        .tt-stat-val i { font-style: normal; font-size: .9rem; color: rgb(var(--g400)); margin-left: 1px; }
+        .tt-stat-val .tt-num { display: inline-block; min-width: 3ch; text-align: center; }
+        .tt-stat-label { font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: rgb(var(--g400)); }
+
+        .tt-words-wrap { width: 100%; }
+        .tt-words { position: relative; font-family: 'Geist Pixel', 'Geist Mono', monospace; font-size: 1.5rem; line-height: 2.5rem; min-height: 5rem; color: rgb(var(--g300)); user-select: none; letter-spacing: .02em; }
+        .tt-word { display: inline-block; margin: 0 .55rem .15rem 0; white-space: nowrap; }
+        .tt-char { transition: color .09s ease; }
+        .tt-char.correct { color: rgb(var(--ink)); }
+        .tt-char.incorrect { color: #e0584f; }
+        .tt-char.extra { color: #e0584f; opacity: .55; }
+        .tt-caret { position: absolute; top: 0; left: 0; width: 2px; height: 1.5rem; background: rgb(var(--ink)); border-radius: 2px; transform: translateY(.19rem); transition: left .11s cubic-bezier(.16,1,.3,1), top .11s ease; animation: tt-blink 1.05s ease-in-out infinite; }
+        @keyframes tt-blink { 0%,100% { opacity: 1; } 50% { opacity: .12; } }
+
+        .tt-keyboard { display: flex; flex-direction: column; gap: .42rem; align-items: center; }
+        .tt-krow { display: flex; gap: .42rem; }
+        .tt-key { display: flex; align-items: center; justify-content: center; min-width: 2.4rem; height: 2.4rem; padding: 0 .45rem; border-radius: .62rem; background: rgb(var(--g100)); border: 1px solid rgb(var(--g200)); box-shadow: 0 2px 0 rgb(var(--g200)); font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: rgb(var(--g500)); transition: transform .07s ease, background .14s ease, color .14s ease, box-shadow .1s ease, border-color .14s ease; }
+        .tt-key.space { min-width: 15rem; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: rgb(var(--g400)); }
+        .tt-key.next { border-color: rgb(var(--g300)); color: rgb(var(--ink)); box-shadow: 0 0 0 3px rgb(var(--ink) / 0.06), 0 2px 0 rgb(var(--g200)); }
+        .tt-key.active { background: rgb(var(--g200)); color: rgb(var(--ink)); border-color: rgb(var(--g300)); transform: translateY(2px); box-shadow: 0 0 0 rgb(var(--g300)); }
+        #typingOverlay.is-open .tt-key { animation: tt-keyin .42s both cubic-bezier(.16,1,.3,1); }
+        @keyframes tt-keyin { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
+
+        .tt-hint { font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: rgb(var(--g400)); display: flex; gap: 1.1rem; }
+        .tt-hint kbd { padding: 1px 6px; border: 1px solid rgb(var(--g200)); border-radius: 5px; background: rgb(var(--g50)); color: rgb(var(--g500)); }
+
+        .tt-results { display: none; flex-direction: column; align-items: center; gap: 1.4rem; }
+        #typingOverlay.show-results .tt-results { display: flex; animation: tt-keyin .5s both; }
+        #typingOverlay.show-results .tt-stats,
+        #typingOverlay.show-results .tt-words-wrap,
+        #typingOverlay.show-results .tt-keyboard { display: none; }
+        .tt-res-main { display: flex; flex-direction: column; align-items: center; gap: .3rem; }
+        .tt-res-wpm { font-family: 'Geist Pixel', 'Geist Mono', monospace; font-size: 5rem; line-height: 1; color: rgb(var(--ink)); font-variant-numeric: tabular-nums; }
+        .tt-res-cap { font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: rgb(var(--g400)); }
+        .tt-res-grid { display: flex; gap: 2.6rem; font-family: 'Geist Mono', monospace; }
+        .tt-res-grid > div { display: flex; flex-direction: column; align-items: center; gap: .35rem; }
+        .tt-res-grid b { font-weight: 500; font-size: 1.5rem; color: rgb(var(--g800)); font-variant-numeric: tabular-nums; }
+        .tt-res-grid b i { font-style: normal; font-size: .85rem; color: rgb(var(--g400)); }
+        .tt-res-grid label { font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: rgb(var(--g400)); }
+        .tt-restart { margin-top: .4rem; display: inline-flex; align-items: center; gap: .5rem; padding: .5rem 1.1rem; border-radius: .7rem; background: rgb(var(--ink)); color: rgb(var(--bg)); font-family: 'Geist Mono', monospace; font-size: 12px; transition: background .2s, transform .2s; }
+        .tt-restart:hover { background: rgb(var(--g800)); transform: translateY(-1px); }
+        .tt-verdict { display: inline-flex; align-items: center; gap: .5rem; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12.5px; letter-spacing: .03em; color: rgb(var(--g400)); }
+        .tt-verdict .tt-vicon { width: 14px; height: 14px; flex: none; color: rgb(var(--g300)); }
+        .tt-verdict.beat { font-family: 'Geist Pixel', 'Geist Mono', monospace; font-size: 15px; letter-spacing: .01em; color: rgb(var(--ink)); animation: tt-beatpop .6s cubic-bezier(.16,1,.3,1) both; }
+        .tt-verdict.beat .tt-vicon { color: rgb(var(--ink)); width: 15px; height: 15px; }
+        @keyframes tt-beatpop { 0% { opacity: 0; transform: scale(.7); } 60% { transform: scale(1.08); } 100% { opacity: 1; transform: scale(1); } }
+
+        .tt-confirm { display: none; align-items: center; gap: .55rem; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: rgb(var(--ink)); padding: .5rem .95rem; border: 1px solid rgb(var(--g200)); border-radius: .7rem; background: rgb(var(--g100)); box-shadow: 0 10px 28px -14px rgba(0,0,0,.3); animation: tt-keyin .28s both; }
+        .tt-confirm kbd { padding: 1px 6px; border: 1px solid rgb(var(--g200)); border-radius: 5px; background: rgb(var(--g50)); color: rgb(var(--g500)); }
+        #typingOverlay.is-confirming .tt-confirm { display: inline-flex; }
+        #typingOverlay.is-confirming .tt-hint { display: none; }
+    </style>
+
+    <!-- ── Typing Test Markup ── -->
+    <div id="typingOverlay" role="dialog" aria-modal="true" aria-label="Typing test">
+        <div class="tt-backdrop" onclick="closeTyping()"></div>
+        <div class="tt-content">
+            <div class="tt-stats">
+                <div class="tt-stat"><span class="tt-stat-val"><span class="tt-num" id="ttWpm">0</span></span><span class="tt-stat-label">wpm</span></div>
+                <div class="tt-stat"><span class="tt-stat-val"><span class="tt-num" id="ttAcc">100</span><i>%</i></span><span class="tt-stat-label">acc</span></div>
+                <div class="tt-stat"><span class="tt-stat-val"><span class="tt-num" id="ttTime">0</span><i>s</i></span><span class="tt-stat-label">time</span></div>
+            </div>
+
+            <div class="tt-words-wrap"><div class="tt-words" id="ttWords"></div></div>
+
+            <div class="tt-keyboard" id="ttKeyboard"></div>
+
+            <div class="tt-hint">
+                <span><kbd>tab</kbd> restart</span>
+                <span><kbd>esc</kbd> close</span>
+            </div>
+            <div class="tt-confirm" id="ttConfirm">restart test? <kbd>↵</kbd> to confirm · <kbd>esc</kbd> cancel</div>
+
+            <div class="tt-results">
+                <div class="tt-res-main">
+                    <span class="tt-res-wpm" id="ttResWpm">0</span>
+                    <span class="tt-res-cap">words per minute</span>
+                </div>
+                <div class="tt-res-grid">
+                    <div><b><span id="ttResAcc">0</span><i>%</i></b><label>accuracy</label></div>
+                    <div><b><span id="ttResRaw">0</span></b><label>raw</label></div>
+                    <div><b><span id="ttResTime">0</span><i>s</i></b><label>time</label></div>
+                </div>
+                <div class="tt-verdict" id="ttVerdict"></div>
+                <button type="button" class="tt-restart" onclick="ttRestart()">↻ try again</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Interactive JavaScript Logic ── -->
+    <script>
+        // ── Ask overlay: ⌘K (Mac) / Alt+K (Windows) ──
+        (function () {
+            const askOverlay = document.getElementById('askOverlay');
+            if (!askOverlay) return;
+            const askInput = document.getElementById('askInput');
+            const askText = document.getElementById('askText');
+            const askContent = askOverlay.querySelector('.ask-content');
+            const askTitle = askOverlay.querySelector('.ask-title');
+            const askCaret = askOverlay.querySelector('.ask-caret');
+            const askLoader = document.getElementById('askLoader');
+            const askHead = askOverlay.querySelector('.ask-head');
+            const askField = askOverlay.querySelector('.ask-field');
+            const askBubble = document.getElementById('askBubble');
+            const askBubbleText = document.getElementById('askBubbleText');
+            const askReveal = document.getElementById('askReveal');
+            const ASK_DEFAULT_TITLE = 'what do you want to ask?';
+            let askSeq = 0;
+            let askBusy = false;
+
+            const askSleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+            function askResetState() {
+                askBusy = false;
+                if (askInput) {
+                    askInput.removeAttribute('readonly');
+                    askInput.value = '';
+                }
+                if (askText) askText.textContent = '';
+                if (askCaret) askCaret.style.display = '';
+                if (askField) askField.style.display = '';
+                if (askBubble) {
+                    askBubble.classList.remove('is-on');
+                    askBubble.style.opacity = '';
+                    askBubble.style.filter = '';
+                    askBubble.style.transition = '';
+                }
+                if (askBubbleText) askBubbleText.textContent = '';
+                if (askTitle) {
+                    askTitle.classList.remove('is-small');
+                    askTitle.style.transition = '';
+                    askTitle.style.opacity = '';
+                    askTitle.style.transform = '';
+                    askTitle.style.filter = '';
+                    askTitle.textContent = ASK_DEFAULT_TITLE;
+                }
+                if (askLoader) askLoader.classList.remove('is-on');
+                if (askHead) {
+                    askHead.classList.remove('is-shimmer');
+                    askHead.style.display = '';
+                    askHead.style.opacity = '';
+                    askHead.style.transition = '';
+                    askHead.style.filter = '';
+                }
+                if (askReveal) {
+                    askReveal.style.display = 'none';
+                    askReveal.innerHTML = '';
+                    askReveal.style.opacity = '';
+                    askReveal.style.transition = '';
+                }
+            }
+
+            async function askSetTitle(text, pulse) {
+                if (!askTitle) return;
+                askTitle.style.transition = 'opacity .25s ease, transform .3s cubic-bezier(.16,1,.3,1)';
+                askTitle.style.opacity = '0';
+                askTitle.style.transform = 'translateY(6px)';
+                await askSleep(250);
+                askTitle.textContent = text;
+                if (pulse) {
+                    askTitle.classList.add('is-small');
+                    if (askLoader) askLoader.classList.add('is-on');
+                    if (askHead) askHead.classList.add('is-shimmer');
+                    askTitle.style.transition = '';
+                    askTitle.style.opacity = '';
+                    askTitle.style.transform = '';
+                } else {
+                    if (askLoader) askLoader.classList.remove('is-on');
+                    if (askHead) askHead.classList.remove('is-shimmer');
+                    askTitle.classList.add('is-small');
+                    askTitle.style.opacity = '1';
+                    askTitle.style.transform = 'none';
+                    await askSleep(300);
+                }
+            }
+
+            function detectBrowser(ua) {
+                if (/Edg\//.test(ua)) return 'Edge ' + ((ua.match(/Edg\/(\d+)/) || [])[1] || '');
+                if (/OPR\//.test(ua)) return 'Opera ' + ((ua.match(/OPR\/(\d+)/) || [])[1] || '');
+                if (/Firefox\//.test(ua)) return 'Firefox ' + ((ua.match(/Firefox\/(\d+)/) || [])[1] || '');
+                if (/Chrome\//.test(ua)) return 'Chrome ' + ((ua.match(/Chrome\/(\d+)/) || [])[1] || '');
+                if (/Safari\//.test(ua) && /Version\//.test(ua)) return 'Safari ' + ((ua.match(/Version\/(\d+)/) || [])[1] || '');
+                return 'your browser';
+            }
+            function detectOS(ua) {
+                if (/Windows/.test(ua)) return 'Windows';
+                if (/iPhone|iPad|iPod/.test(ua)) return 'iOS';
+                if (/Mac OS X/.test(ua)) return 'macOS';
+                if (/Android/.test(ua)) return 'Android';
+                if (/Linux/.test(ua)) return 'Linux';
+                return 'your device';
+            }
+            async function collectData() {
+                const ua = navigator.userAgent;
+                const data = {
+                    ip: '', city: '', region: '', country: '', isp: '', lat: '', lon: '',
+                    os: detectOS(ua),
+                    browser: detectBrowser(ua),
+                    screen: screen.width + '×' + screen.height,
+                    cores: navigator.hardwareConcurrency || '?',
+                    ramNum: navigator.deviceMemory || null,
+                    lang: navigator.language || (navigator.languages && navigator.languages[0]) || '—',
+                    tz: (Intl.DateTimeFormat().resolvedOptions().timeZone) || '—',
+                    time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+                    conn: (navigator.connection && navigator.connection.effectiveType) || '',
+                    referrer: '',
+                };
+                try { if (document.referrer) data.referrer = new URL(document.referrer).hostname; } catch (e) {}
+                try {
+                    const ctrl = new AbortController();
+                    const to = setTimeout(() => ctrl.abort(), 3500);
+                    const res = await fetch('https://ipwho.is/', { signal: ctrl.signal });
+                    clearTimeout(to);
+                    const j = await res.json();
+                    if (j && j.success !== false) {
+                        data.ip = j.ip || '';
+                        data.city = j.city || '';
+                        data.region = j.region || '';
+                        data.country = j.country || '';
+                        data.isp = (j.connection && j.connection.isp) || j.org || '';
+                        data.lat = j.latitude; data.lon = j.longitude;
+                        if ((!data.tz || data.tz === '—') && j.timezone && j.timezone.id) data.tz = j.timezone.id;
+                    }
+                } catch (e) {}
+                return data;
+            }
+
+            async function askInterrupt(data, mySeq) {
+                askBubble.style.transition = 'opacity .55s ease, filter .55s ease';
+                askBubble.style.filter = 'blur(8px)';
+                askBubble.style.opacity = '0';
+                askHead.style.transition = 'opacity .55s ease, filter .55s ease';
+                askHead.style.filter = 'blur(8px)';
+                askHead.style.opacity = '0';
+                await askSleep(600);
+                if (mySeq !== askSeq) return;
+
+                askBubble.classList.remove('is-on');
+                askBubble.style.transition = '';
+                askBubble.style.filter = '';
+                askBubble.style.opacity = '';
+                if (askLoader) askLoader.classList.remove('is-on');
+                if (askHead) askHead.classList.remove('is-shimmer');
+                askTitle.textContent = '';
+                askTitle.classList.remove('is-small');
+                askTitle.style.opacity = '';
+                askTitle.style.transform = '';
+                askTitle.style.filter = '';
+                if (askHead) {
+                    askHead.style.transition = '';
+                    askHead.style.filter = '';
+                    askHead.style.opacity = '';
+                }
+                await askSleep(300);
+                if (mySeq !== askSeq) return;
+
+                const loc = [data.city, data.region, data.country].filter(Boolean).join(', ');
+                const msgs = [
+                    'before i answer',
+                    'here is what your browser already shared the moment you opened this site',
+                ];
+                if (loc) msgs.push('you are currently in ' + loc);
+                if (data.ip) msgs.push('your public ip address is ' + data.ip);
+                if (data.isp) msgs.push('you are connected through ' + data.isp);
+                if (data.lat && data.lon) msgs.push('your approximate coordinates are around ' + (+data.lat).toFixed(2) + ', ' + (+data.lon).toFixed(2));
+                msgs.push('you are on a ' + data.os + ' device with ' + data.cores + ' processor cores' + (data.ramNum ? ' and ' + data.ramNum + 'gb of memory' : ''));
+                msgs.push('you are browsing with ' + data.browser + ' set to ' + data.lang);
+                msgs.push('your timezone is ' + data.tz + ' and it is around ' + String(data.time).toLowerCase() + ' where you are');
+                if (data.conn) msgs.push('you are on a ' + data.conn + ' connection');
+                if (data.referrer) msgs.push('you arrived here from ' + data.referrer);
+                msgs.push('none of this needed your permission');
+                msgs.push('your browser shares it with every website you open, automatically');
+                msgs.push('so be mindful of what you click, and who you trust online');
+
+                for (const m of msgs) {
+                    await askSetTitle(m, false);
+                    if (mySeq !== askSeq) return;
+                    await askSleep(2500);
+                    if (mySeq !== askSeq) return;
+                }
+            }
+
+            async function askSubmit() {
+                if (askBusy) return;
+                const query = askInput.value.trim();
+                if (!query) return;
+
+                askBusy = true;
+                const mySeq = askSeq;
+                askInput.setAttribute('readonly', '');
+                askCaret.style.display = 'none';
+
+                askBubbleText.textContent = query;
+                askBubble.classList.add('is-on');
+                askField.style.display = 'none';
+
+                const dataPromise = collectData();
+
+                await askSetTitle('thinking...', true);
+                await askSleep(1900);
+                if (mySeq !== askSeq) return;
+
+                await askSetTitle('analyzing...', true);
+                await askSleep(1500);
+                if (mySeq !== askSeq) return;
+
+                const data = await dataPromise;
+                if (mySeq !== askSeq) return;
+                await askInterrupt(data, mySeq);
+                if (mySeq !== askSeq) return;
+
+                await askSetTitle('as for your question', false);
+                await askSleep(2000);
+                if (mySeq !== askSeq) return;
+
+                await askSetTitle("i don't want to waste tokens on that, search for it yourself :)", false);
+                await askSleep(2200);
+                if (mySeq !== askSeq) return;
+
+                window.open('https://www.google.com/search?q=' + encodeURIComponent(query), '_blank', 'noopener');
+            }
+
+            window.openAsk = function () {
+                askSeq++;
+                askResetState();
+                if (askContent) {
+                    askContent.style.transition = '';
+                    askContent.style.opacity = '';
+                    askContent.style.transform = '';
+                }
+                askOverlay.classList.add('is-visible');
+                document.documentElement.style.overflow = 'hidden';
+                requestAnimationFrame(() => askOverlay.classList.add('is-open'));
+                setTimeout(() => askInput.focus(), 60);
+            };
+            window.closeAsk = function () {
+                askSeq++;
+                document.documentElement.style.overflow = '';
+                askInput.blur();
+                askContent.style.transition = 'opacity .22s ease, transform .22s ease';
+                askContent.style.opacity = '0';
+                askContent.style.transform = 'translateY(6px)';
+                setTimeout(() => askOverlay.classList.remove('is-open'), 210);
+                setTimeout(() => {
+                    askOverlay.classList.remove('is-visible');
+                    askContent.style.transition = '';
+                    askContent.style.opacity = '';
+                    askContent.style.transform = '';
+                    askResetState();
+                }, 640);
+            };
+            window.focusAsk = function () { if (!askBusy) askInput.focus(); };
+            window.askIsOpen = function () { return askOverlay.classList.contains('is-visible'); };
+
+            askInput.addEventListener('input', () => { askText.textContent = askInput.value; });
+            askInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') { e.preventDefault(); askSubmit(); }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if ((e.metaKey || e.altKey) && e.code === 'KeyK' && !e.ctrlKey) {
+                    e.preventDefault();
+                    askIsOpen() ? closeAsk() : openAsk();
+                    return;
+                }
+                if (e.key === 'Escape' && askIsOpen()) closeAsk();
+            });
+        })();
+
+        // ── Typing test Logic ──
+        (function () {
+            const overlay = document.getElementById('typingOverlay');
+            if (!overlay) return;
+            const wordsEl = document.getElementById('ttWords');
+            const kbEl = document.getElementById('ttKeyboard');
+            const elWpm = document.getElementById('ttWpm'), elAcc = document.getElementById('ttAcc'), elTime = document.getElementById('ttTime');
+            const rWpm = document.getElementById('ttResWpm'), rAcc = document.getElementById('ttResAcc'), rRaw = document.getElementById('ttResRaw'), rTime = document.getElementById('ttResTime');
+            const verdictEl = document.getElementById('ttVerdict');
+            const TARGET_WPM = 140;
+
+            const WORD_BANK = ('the be of and a to in he have it that for they with as not on she at by this we you do but from or which one would all will there say who make when can more if no out other so what time up go about than into could state only new year some take come these know see use get like then first any work now may such give over think most even find day also after way many must look before great back through long where much should well people down own just because good each those feel seem how high too place little world very still hand old life tell write become here show house both between need mean call under last right move thing school never same begin while number part turn real leave might want point form off child few small since against ask late home large person end open public follow during without again hold around possible head consider word program problem however lead system set order eye plan run keep face fact group play stand early course change help line').split(' ');
+            const KB_ROWS = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
+            const N_WORDS = 26;
+
+            let words = [], wordEls = [], wi = 0, ci = 0;
+            let started = false, finished = false, startTime = 0, rafId = null;
+            let raw = 0, correct = 0;
+            let dispWpm = 0, dispAcc = 100, dispTime = 0, lastStatWrite = 0;
+            let isOpen = false, pendingRestart = false, closeT1 = null, closeT2 = null;
+            const caretEl = document.createElement('span'); caretEl.className = 'tt-caret';
+            function setConfirm(on) { pendingRestart = on; overlay.classList.toggle('is-confirming', on); }
+
+            function rand(n) { return Math.floor(Math.random() * n); }
+            function genWords() { words = Array.from({ length: N_WORDS }, () => WORD_BANK[rand(WORD_BANK.length)]); }
+
+            function buildKeyboard() {
+                kbEl.innerHTML = ''; let idx = 0;
+                KB_ROWS.forEach((row) => {
+                    const r = document.createElement('div'); r.className = 'tt-krow';
+                    for (const ch of row) {
+                        const k = document.createElement('span'); k.className = 'tt-key'; k.dataset.key = ch; k.textContent = ch;
+                        k.style.animationDelay = (idx * 7) + 'ms'; r.appendChild(k); idx++;
+                    }
+                    kbEl.appendChild(r);
+                });
+                const r = document.createElement('div'); r.className = 'tt-krow';
+                const sp = document.createElement('span'); sp.className = 'tt-key space'; sp.dataset.key = ' '; sp.textContent = 'space';
+                sp.style.animationDelay = (idx * 7) + 'ms'; r.appendChild(sp); kbEl.appendChild(r);
+            }
+            function keyEl(ch) { try { return kbEl.querySelector('.tt-key[data-key="' + (ch === ' ' ? ' ' : ch) + '"]'); } catch (e) { return null; } }
+            function flashKey(ch) { const k = keyEl(ch); if (k) { k.classList.add('active'); setTimeout(() => k.classList.remove('active'), 110); } }
+            function highlightNext() {
+                kbEl.querySelectorAll('.tt-key.next').forEach((k) => k.classList.remove('next'));
+                if (finished) return;
+                const cur = wordEls[wi]; let nc = null;
+                if (cur && ci < cur.word.length) nc = cur.word[ci];
+                else if (wi < words.length - 1) nc = ' ';
+                if (nc) { const k = keyEl(nc); if (k) k.classList.add('next'); }
+            }
+
+            function buildText() {
+                wordsEl.innerHTML = ''; wordEls = [];
+                words.forEach((w) => {
+                    const wEl = document.createElement('span'); wEl.className = 'tt-word'; const chars = [];
+                    for (const ch of w) { const c = document.createElement('span'); c.className = 'tt-char'; c.textContent = ch; wEl.appendChild(c); chars.push(c); }
+                    wordsEl.appendChild(wEl); wordEls.push({ el: wEl, chars, word: w });
+                });
+                wordsEl.appendChild(caretEl);
+            }
+
+            function moveCaret() {
+                const cur = wordEls[wi]; if (!cur) return;
+                let left, top;
+                if (ci < cur.chars.length) { const el = cur.chars[ci]; left = el.offsetLeft; top = el.offsetTop; }
+                else { const el = cur.chars[cur.chars.length - 1]; left = el.offsetLeft + el.offsetWidth; top = el.offsetTop; }
+                caretEl.style.left = left + 'px'; caretEl.style.top = top + 'px';
+            }
+
+            function start() {
+                started = true; startTime = Date.now(); wordsEl.classList.add('is-typing');
+                cancelAnimationFrame(rafId); rafId = requestAnimationFrame(statsLoop);
+            }
+            function statsLoop(now) {
+                const ms = now || 0;
+                const t = started ? (Date.now() - startTime) / 1000 : 0;
+                const tgtWpm = (started && t > 0.5) ? (correct / 5) / (t / 60) : 0;
+                const tgtAcc = raw ? (correct / raw * 100) : 100;
+                dispWpm += (tgtWpm - dispWpm) * 0.16;
+                dispAcc += (tgtAcc - dispAcc) * 0.16;
+                dispTime += (t - dispTime) * 0.4;
+                if (Math.abs(tgtWpm - dispWpm) < 0.5) dispWpm = tgtWpm;
+                if (Math.abs(tgtAcc - dispAcc) < 0.5) dispAcc = tgtAcc;
+                if (ms - lastStatWrite >= 240) {
+                    lastStatWrite = ms;
+                    elWpm.textContent = Math.round(dispWpm);
+                    elAcc.textContent = Math.round(dispAcc);
+                    elTime.textContent = Math.floor(dispTime + 1e-4);
+                }
+                if (isOpen && !finished) rafId = requestAnimationFrame(statsLoop);
+            }
+
+            function afterInput() {
+                moveCaret(); highlightNext();
+                const cur = wordEls[wi];
+                if (cur && wi === words.length - 1 && ci >= cur.word.length) finish();
+            }
+
+            // Bind to global restart
+            window.ttRestart = reset;
+
+            function handleChar(k) {
+                if (finished) return;
+                if (!started) start();
+                const cur = wordEls[wi]; if (!cur) return;
+                if (ci < cur.word.length) {
+                    const el = cur.chars[ci]; const ok = (k === cur.word[ci]);
+                    el.classList.add(ok ? 'correct' : 'incorrect');
+                    raw++; if (ok) correct++; ci++;
+                } else if (cur.chars.length - cur.word.length < 8) {
+                    const ex = document.createElement('span'); ex.className = 'tt-char extra'; ex.textContent = k;
+                    cur.el.appendChild(ex); cur.chars.push(ex); raw++; ci++;
+                }
+                afterInput();
+            }
+            function handleSpace() {
+                if (finished || !started) return;
+                if (wi < words.length - 1) { wi++; ci = 0; afterInput(); }
+            }
+            function handleBackspace() {
+                if (finished) return;
+                if (ci > 0) {
+                    ci--; const cur = wordEls[wi]; if (!cur) return;
+                    if (ci >= cur.word.length) { const ex = cur.chars.pop(); if (ex) ex.remove(); }
+                    else cur.chars[ci].classList.remove('correct', 'incorrect');
+                } else if (wi > 0) { wi--; const cur = wordEls[wi]; if (cur) ci = cur.chars.length; }
+                moveCaret(); highlightNext();
+            }
+
+            function finish() {
+                if (finished) return;
+                finished = true; cancelAnimationFrame(rafId); wordsEl.classList.remove('is-typing');
+                const el = Math.max(0.001, (Date.now() - startTime) / 1000);
+                const wpm = Math.round((correct / 5) / (el / 60));
+                const rawWpm = Math.round((raw / 5) / (el / 60));
+                const acc = raw ? Math.round(correct / raw * 100) : 100;
+                rAcc.textContent = acc; rRaw.textContent = rawWpm; rTime.textContent = el.toFixed(1);
+                const beat = wpm >= TARGET_WPM;
+                const icon = beat
+                    ? '<svg class="tt-vicon" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+                    : '<svg class="tt-vicon" viewBox="0 0 24 24" fill="none"><path d="M7 7l10 10M17 7L7 17" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>';
+                verdictEl.className = 'tt-verdict' + (beat ? ' beat' : ' miss');
+                verdictEl.innerHTML = icon + '<span>' + (beat ? 'you beat dev · 140 wpm' : "you didn't beat dev · 140 wpm") + '</span>';
+                overlay.classList.add('show-results');
+                countUp(rWpm, wpm, 750);
+            }
+            function countUp(el, target, dur) {
+                const t0 = performance.now();
+                (function tick(now) {
+                    const p = Math.min(1, (now - t0) / dur); const e = 1 - Math.pow(1 - p, 3);
+                    el.textContent = Math.round(target * e);
+                    if (p < 1) requestAnimationFrame(tick); else el.textContent = target;
+                })(t0);
+            }
+
+            function reset() {
+                finished = false; started = false; startTime = 0; wi = 0; ci = 0; raw = 0; correct = 0;
+                cancelAnimationFrame(rafId); overlay.classList.remove('show-results'); setConfirm(false);
+                dispWpm = 0; dispAcc = 100; dispTime = 0; lastStatWrite = 0;
+                elWpm.textContent = '0'; elAcc.textContent = '100'; elTime.textContent = '0';
+                genWords(); buildText(); requestAnimationFrame(() => { moveCaret(); highlightNext(); });
+            }
+
+            window.openTyping = function () {
+                clearTimeout(closeT1); clearTimeout(closeT2);
+                overlay.classList.remove('is-closing');
+                if (window.closeAsk) try { window.closeAsk(); } catch (e) {}
+                if (window.closeChat) try { window.closeChat(); } catch (e) {}
+                overlay.classList.add('is-visible');
+                document.documentElement.style.overflow = 'hidden';
+                requestAnimationFrame(() => overlay.classList.add('is-open'));
+                isOpen = true;
+                reset();
+            };
+            window.closeTyping = function () {
+                if (!isOpen) return;
+                isOpen = false; cancelAnimationFrame(rafId); setConfirm(false);
+                document.documentElement.style.overflow = '';
+                overlay.classList.add('is-closing');
+                closeT1 = setTimeout(() => {
+                    overlay.classList.remove('is-open');
+                    closeT2 = setTimeout(() => {
+                        overlay.classList.remove('is-visible', 'is-closing');
+                    }, 380);
+                }, 280);
+            };
+
+            buildKeyboard();
+
+            document.addEventListener('keydown', (e) => {
+                if ((e.metaKey || e.altKey) && e.code === 'KeyJ' && !e.ctrlKey) {
+                    e.preventDefault();
+                    isOpen ? closeTyping() : openTyping();
+                    return;
+                }
+                if (!isOpen) return;
+                if (e.key === 'Escape') { e.preventDefault(); if (pendingRestart) setConfirm(false); else closeTyping(); return; }
+                if (e.metaKey || e.ctrlKey) return;
+                if (e.key === 'Tab') { e.preventDefault(); if (started && !finished) setConfirm(true); else reset(); return; }
+                if (e.key === 'Enter') { if (pendingRestart || finished) { e.preventDefault(); reset(); } return; }
+                if (pendingRestart) return;
+                if (e.key === 'Backspace') { e.preventDefault(); flashKey('backspace'); handleBackspace(); return; }
+                if (e.key === ' ') { e.preventDefault(); flashKey(' '); finished ? reset() : handleSpace(); return; }
+                if (e.key.length === 1) {
+                    const ch = e.key.toLowerCase();
+                    if (/[a-z]/.test(ch)) { e.preventDefault(); flashKey(ch); if (!finished) handleChar(ch); }
+                }
+            });
+        })();
+    </script>
+
+
+    <!-- ── Community chat overlay (static / no backend: seed + local echo) ── -->
+    <div id="chatOverlay" role="dialog" aria-modal="true" aria-label="Community chat">
+        <div class="chat-backdrop" onclick="closeChat()"></div>
+        <div class="chat-content">
+            <div class="chat-count" id="chatCount"></div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <form class="chat-input-row" id="chatForm">
+                <div class="chat-prompt" id="chatPrompt">what's your name?</div>
+                <div class="chat-entry">
+                    <input id="chatInput" class="chat-field" type="text" placeholder="your name" maxlength="40" autocomplete="off" aria-label="Input">
+                    <button type="submit" class="chat-send" id="chatSend">next ↵</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const overlay = document.getElementById('chatOverlay');
+            if (!overlay) return;
+            const messagesEl = document.getElementById('chatMessages');
+            const form = document.getElementById('chatForm');
+            const inputEl = document.getElementById('chatInput');
+            const promptEl = document.getElementById('chatPrompt');
+            const sendEl = document.getElementById('chatSend');
+            let lastId = 0;
+            let timeTimer = null;
+            let phase = 'name';
+            let chatName = '';
+            let myDevice = '';
+            let myLocation = '';
+            let seeded = false;
+            const MAX_VISIBLE = 5;        // only the latest 5 messages stay on screen
+            const SEND_COOLDOWN = 8000;   // min ms between a user's own messages (anti-spam)
+            const KIND_URL = 'https://en.wikipedia.org/wiki/Netiquette';
+            const BAD_LOOSE = ["fuck","motherfuck","shit","bullshit","bitch","asshole","cunt","faggot","nigger","nigga","dickhead","jackass","dumbass","cocksuck","dipshit","putangina","putanginamo","tangina","taena","tarantado","gago","gaga","ulol","kingina","kupal","pakshet","pakyu","hinayupak","hindot","hindut","buwiset","bwisit","putang ina","tang ina","walang hiya","hayop ka","gunggong"];
+            const BAD_STRICT = ["ass","dick","cock","prick","slut","whore","twat","wank","piss","bastard","pussy","puta","tanga","bobo","tite","titi","puki","pekpek","jakol","leche","peste","lintik","ungas","inutil"];
+            let lastSent = 0;
+            let hintTimer = null;
+            try { chatName = localStorage.getItem('chatName') || ''; } catch (e) {}
+
+            // Seed messages mirroring the reference (name, message, location, device, relative time)
+            const SEED = [
+                { name: 'A',    message: 'Aas',                        device: 'iPhone', minsAgo: 46 },
+                { name: 'Try',  message: 'dfd',                        device: 'Mac',    minsAgo: 39 },
+                { name: 'Dez',  message: 'damn',                       device: 'Mac',    minsAgo: 38 },
+                { name: 'Https://Edwinsal.vercel.app/', message: 'check nio akin mas malopit <3', device: 'Mac', minsAgo: 31 },
+                { name: 'Sef',  message: 'Niceeeeeee',                 device: 'Mac',    minsAgo: 8 },
+            ];
+
+            function avatarUrl(name) {
+                return 'https://api.dicebear.com/9.x/notionists/svg?seed=' + encodeURIComponent(name || 'anon') + '&radius=50&backgroundColor=f1f1f1';
+            }
+
+            function detectDevice() {
+                const ua = navigator.userAgent || '';
+                const touch = navigator.maxTouchPoints || 0;
+                if (/iPad/.test(ua) || (/Macintosh/.test(ua) && touch > 1)) return 'iPad';
+                if (/iPhone|iPod/.test(ua)) return 'iPhone';
+                if (/Android/.test(ua)) return /Mobile/.test(ua) ? 'Android' : 'Android tablet';
+                if (/Macintosh|Mac OS X/.test(ua)) return 'Mac';
+                if (/Windows/.test(ua)) return 'Windows';
+                if (/CrOS/.test(ua)) return 'Chromebook';
+                if (/Linux/.test(ua)) return 'Linux';
+                return 'device';
+            }
+
+            const DEV_ICONS = {
+                phone: '<svg class="chat-dev" viewBox="0 0 24 24" fill="none"><rect x="7" y="2.5" width="10" height="19" rx="2.2" stroke="currentColor" stroke-width="1.6"/><line x1="10.5" y1="18.5" x2="13.5" y2="18.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+                tablet: '<svg class="chat-dev" viewBox="0 0 24 24" fill="none"><rect x="4" y="2.5" width="16" height="19" rx="2.2" stroke="currentColor" stroke-width="1.6"/><line x1="10.5" y1="18.5" x2="13.5" y2="18.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+                laptop: '<svg class="chat-dev" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="11" rx="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M2 19.5h20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+            };
+            function deviceIcon(label) {
+                if (label === 'iPhone' || label === 'Android') return DEV_ICONS.phone;
+                if (label === 'iPad' || label === 'Android tablet') return DEV_ICONS.tablet;
+                return DEV_ICONS.laptop;
+            }
+
+            async function collectLocation() {
+                if (myLocation) return;
+                try {
+                    const ctrl = new AbortController();
+                    const to = setTimeout(() => ctrl.abort(), 3500);
+                    const r = await fetch('https://ipwho.is/', { signal: ctrl.signal });
+                    clearTimeout(to);
+                    const d = await r.json();
+                    if (d && d.success !== false) {
+                        myLocation = [d.city, d.country_code].filter(Boolean).join(', ') || d.country || '';
+                    }
+                } catch (e) {}
+            }
+
+            function messagePrompt() {
+                promptEl.innerHTML = 'chatting as ';
+                const b = document.createElement('b'); b.textContent = chatName; // textContent => XSS-safe
+                promptEl.appendChild(b);
+            }
+
+            function cooldownHint() {
+                if (hintTimer) clearTimeout(hintTimer);
+                promptEl.textContent = 'easy — give it a sec…';
+                hintTimer = setTimeout(messagePrompt, 1400);
+            }
+
+            function timeAgo(iso) {
+                const then = iso ? new Date(iso).getTime() : NaN;
+                if (isNaN(then)) return '';
+                const s = Math.max(0, Math.floor((Date.now() - then) / 1000));
+                if (s < 10) return 'just now';
+                if (s < 60) return s + 's ago';
+                const m = Math.floor(s / 60); if (m < 60) return m + 'm ago';
+                const h = Math.floor(m / 60); if (h < 24) return h + 'h ago';
+                const d = Math.floor(h / 24); if (d < 7) return d + 'd ago';
+                const w = Math.floor(d / 7); if (w < 5) return w + 'w ago';
+                const mo = Math.floor(d / 30); if (mo < 12) return mo + 'mo ago';
+                return Math.floor(d / 365) + 'y ago';
+            }
+            def = null;
+            function updateTimes() {
+                messagesEl.querySelectorAll('.chat-time').forEach((el) => { el.textContent = timeAgo(el.dataset.at); });
+            }
+
+            function isOffensive(text) {
+                const t = (text || '').toLowerCase();
+                for (const w of BAD_LOOSE) { if (t.indexOf(w) !== -1) return true; }
+                for (const w of BAD_STRICT) {
+                    try { if (new RegExp('\\b' + w.replace(/[.*+?^${}()|[\\\]]/g, '\\$&') + '\\b', 'u').test(t)) return true; } catch (e) {}
+                }
+                return false;
+            }
+            function openKindnessTab() { window.open(KIND_URL, '_blank', 'noopener'); }
+            function blockedHint() {
+                if (hintTimer) clearTimeout(hintTimer);
+                promptEl.textContent = "let's keep it kind — opening a guide for you";
+                hintTimer = setTimeout(messagePrompt, 2800);
+            }
+
+            function startCooldown() {
+                lastSent = Date.now();
+                sendEl.disabled = true;
+                setTimeout(() => { sendEl.disabled = false; }, SEND_COOLDOWN);
+            }
+
+            function updateOverflowFade() {
+                messagesEl.classList.toggle('has-overflow', messagesEl.scrollHeight - messagesEl.clientHeight > 4);
+            }
+
+            function trimMessages() {
+                const items = messagesEl.querySelectorAll('.chat-item');
+                if (items.length > MAX_VISIBLE) {
+                    for (let i = 0; i < items.length - MAX_VISIBLE; i++) items[i].remove();
+                }
+                updateOverflowFade();
+            }
+
+            function setPhase(p) {
+                phase = p;
+                if (p === 'name') {
+                    promptEl.textContent = "what's your name?";
+                    inputEl.placeholder = 'your name';
+                    inputEl.maxLength = 40;
+                    sendEl.textContent = 'next ↵';
+                } else {
+                    messagePrompt();
+                    inputEl.placeholder = 'say something…';
+                    inputEl.maxLength = 500;
+                    sendEl.textContent = 'send ↵';
+                }
+                inputEl.value = '';
+                inputEl.focus();
+            }
+
+            function animateIn(item) {
+                const full = item.offsetHeight;                 // natural height before collapsing
+                item.style.overflow = 'hidden';
+                item.style.height = '0px';
+                item.style.marginTop = '-12px';                  // cancel the flex gap while collapsed
+                item.style.opacity = '0';
+                item.style.filter = 'blur(7px)';
+                item.style.transform = 'translateY(8px)';
+                void item.offsetHeight;                          // flush the start state
+                item.style.transition = 'height .42s cubic-bezier(.16,1,.3,1), margin-top .42s cubic-bezier(.16,1,.3,1), opacity .42s ease, filter .5s ease, transform .42s cubic-bezier(.16,1,.3,1)';
+                requestAnimationFrame(() => {
+                    item.style.height = full + 'px';
+                    item.style.marginTop = '0px';
+                    item.style.opacity = '1';
+                    item.style.filter = 'blur(0)';
+                    item.style.transform = 'translateY(0)';
+                });
+                const done = (e) => {
+                    if (e.propertyName !== 'height') return;
+                    item.style.transition = ''; item.style.height = ''; item.style.overflow = '';
+                    item.style.marginTop = ''; item.style.transform = ''; item.style.opacity = ''; item.style.filter = '';
+                    updateOverflowFade();
+                    item.removeEventListener('transitionend', done);
+                };
+                item.addEventListener('transitionend', done);
+            }
+
+            function addMessage(m, animate) {
+                const item = document.createElement('div');
+                item.className = 'chat-item';
+                const img = document.createElement('img');
+                img.className = 'chat-avatar'; img.alt = ''; img.loading = 'lazy'; img.src = avatarUrl(m.name);
+                const body = document.createElement('div'); body.className = 'chat-body';
+                const a = document.createElement('span'); a.className = 'chat-author';
+                const nm = document.createElement('span'); nm.className = 'chat-name-txt'; nm.textContent = m.name;
+                a.appendChild(nm);
+                if (m.location) {
+                    const sep = document.createElement('span'); sep.className = 'chat-sep'; sep.textContent = '·';
+                    const loc = document.createElement('span'); loc.className = 'chat-loc'; loc.textContent = m.location;
+                    a.appendChild(sep); a.appendChild(loc);
+                }
+                if (m.device) {
+                    const dv = document.createElement('span'); dv.className = 'chat-dev-wrap'; dv.title = m.device;
+                    dv.innerHTML = deviceIcon(m.device);   // fixed-set SVG, never user input
+                    a.appendChild(dv);
+                }
+                if (m.at) {
+                    const tsep = document.createElement('span'); tsep.className = 'chat-sep'; tsep.textContent = '·';
+                    const tm = document.createElement('span'); tm.className = 'chat-time'; tm.dataset.at = m.at; tm.textContent = timeAgo(m.at);
+                    a.appendChild(tsep); a.appendChild(tm);
+                }
+                const bub = document.createElement('div'); bub.className = 'chat-bubble';
+                bub.textContent = m.message;   // textContent keeps it XSS-safe
+                body.appendChild(a); body.appendChild(bub);
+                item.appendChild(img); item.appendChild(body);
+                messagesEl.appendChild(item);
+                lastId = Math.max(lastId, m.id || 0);
+                if (animate) animateIn(item);
+            }
+
+            function scrollBottom() { messagesEl.scrollTop = messagesEl.scrollHeight; }
+
+            function seedOnce() {
+                if (seeded) return;
+                seeded = true;
+                const now = Date.now();
+                SEED.forEach((m, i) => {
+                    addMessage({
+                        id: i + 1,
+                        name: m.name,
+                        message: m.message,
+                        device: m.device,
+                        location: m.location || '',
+                        at: new Date(now - m.minsAgo * 60000).toISOString(),
+                    }, false);
+                });
+                trimMessages();
+                updateTimes();
+                scrollBottom();
+            }
+
+            function send(e) {
+                e.preventDefault();
+                const val = inputEl.value.trim();
+                if (!val) return;
+
+                if (phase === 'name') {
+                    chatName = val;
+                    try { localStorage.setItem('chatName', chatName); } catch (e2) {}
+                    setPhase('message');
+                    return;
+                }
+
+                if (isOffensive(val) || isOffensive(chatName)) {
+                    inputEl.value = '';
+                    blockedHint();
+                    openKindnessTab();
+                    return;
+                }
+
+                if (Date.now() - lastSent < SEND_COOLDOWN) { cooldownHint(); return; }
+
+                inputEl.value = '';
+                const empty = messagesEl.querySelector('.chat-empty'); if (empty) empty.remove();
+                addMessage({
+                    id: lastId + 1,
+                    name: chatName,
+                    message: val,
+                    device: myDevice,
+                    location: myLocation,
+                    at: new Date().toISOString(),
+                }, true);
+                trimMessages();
+                startCooldown();
+                scrollBottom();
+                inputEl.focus();
+            }
+            form.addEventListener('submit', send);
+
+            window.openChat = function () {
+                if (typeof closeMobileNav === 'function') closeMobileNav();
+                overlay.classList.add('is-visible');
+                document.documentElement.style.overflow = 'hidden';
+                requestAnimationFrame(() => overlay.classList.add('is-open'));
+                myDevice = detectDevice();
+                collectLocation();
+                seedOnce();
+                setPhase(chatName ? 'message' : 'name');
+                setTimeout(() => inputEl.focus(), 90);
+                if (timeTimer) clearInterval(timeTimer);
+                timeTimer = setInterval(updateTimes, 20000);
+            };
+            window.closeChat = function () {
+                overlay.classList.remove('is-open');
+                document.documentElement.style.overflow = '';
+                if (timeTimer) { clearInterval(timeTimer); timeTimer = null; }
+                setTimeout(() => overlay.classList.remove('is-visible'), 360);
+            };
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && overlay.classList.contains('is-visible')) closeChat();
+            });
+        })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "provider": {
+    "anthropic": {
+      "options": {
+        "baseURL": "https://www.tryinspector.com/api/anthropic/v1"
+      }
+    }
+  },
+  "$schema": "https://opencode.ai/config.json"
+}
